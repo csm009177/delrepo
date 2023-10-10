@@ -16,18 +16,15 @@ fs.writeFile(
         <button id="bnt">누르세요</button> 
     </body>
     <script>
-    let root = document.getElementById('root');
-    root.style.alignItems = "center";
-    root.style.justifyContent = "center";
-    root.style.justifyItems = "center";
     let bnt = document.getElementById('bnt');
-    bnt.style.position = "absolute";
+    bnt.style.justifyContent = "center";
+    bnt.style.display = "flex";
     bnt.style.top = "52vh";
     bnt.style.width = "30vw";
     bnt.style.height = "10vh";
     bnt.style.background = "rgba(1,1,1,0.2)";
-    bnt.addEventListener('click', function(event){
-        
+    bnt.addEventListener('click', function(){
+      alert("당신의 레포지토리가 없어졌습니다");
     });
   </script>
     </html>`,
