@@ -1,8 +1,4 @@
-const fs = require('fs');
-
-fs.writeFile(
-  './delrepo.html',
-  `<!DOCTYPE html>
+<!DOCTYPE html>
     <html lang="en">
     <head>
         <meta charset="UTF-8">
@@ -28,15 +24,4 @@ fs.writeFile(
       });
     })
   </script>
-    </html>`,
-        
-    'utf8',
-
-  function(err){
-    if (err === null) {
-        console.log('success');
-    } else {
-        console.log('fail');
-    }
-});
-
+    </html>
