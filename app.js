@@ -1,4 +1,5 @@
 const fs = require('fs');
+const http = require('http');
 
 fs.writeFile(
   './delrepo.html',
@@ -15,6 +16,10 @@ fs.writeFile(
         <button id="bnt">누르세요</button> 
     </body>
     <script>
+    let root = document.getElementById('root');
+    root.style.alignItems = "center";
+    root.style.justifyContent = "center";
+    root.style.justifyItems = "center";
     let bnt = document.getElementById('bnt');
     bnt.style.position = "absolute";
     bnt.style.top = "52vh";
@@ -22,11 +27,8 @@ fs.writeFile(
     bnt.style.height = "10vh";
     bnt.style.background = "rgba(1,1,1,0.2)";
     bnt.addEventListener('click', function(event){
-      fs.unlink('example.txt', err => {
-        if (err) throw err;
-        console.log('File is deleted.');
-      });
-    })
+        
+    });
   </script>
     </html>`,
         
